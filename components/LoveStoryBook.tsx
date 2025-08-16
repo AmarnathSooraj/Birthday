@@ -9,8 +9,7 @@ function LoveStoryBook() {
 
   const pokemonData = [
     { id: "006", 
-      description: "Today is your birthday, it's the 4th birthday together. Njn orikalum vicharichittilaa ee 4 kolam nammlk orimich celebrate cheyan pattum nn. Ippolum enik orma ind 1st birthday kk njn ninnod choich ee  kolathe wish nthann nn. Ann nee ente adthu paranj nee ennum koode indaya mathiii.
-Enik nee allathe vere oru allene chinthikan koodi pattila, maybe vere allukal vanneka pakshe ninne pole akkan aarkum kazhiyila.Anyway I wish We can celebrate the coming birthdays together.", audio: "/audio/aradhike.mp3" },
+      description: "Today is your birthday, it's the 4th birthday together. Njn orikalum vicharichittilaa ee 4 kolam nammlk orimich celebrate cheyan pattum nn. Ippolum enik orma ind 1st birthday kk njn ninnod choich ee  kolathe wish nthann nn. Ann nee ente adthu paranj nee ennum koode indaya mathiii.Enik nee allathe vere oru allene chinthikan koodi pattila, maybe vere allukal vanneka pakshe ninne pole akkan aarkum kazhiyila.Anyway I wish We can celebrate the coming birthdays together.", audio: "/audio/aradhike.mp3" },
     { id: "025",
       description: "Vayas 21 aayii, prayam koodi varanann, athpole thanne prshngalum. Ellam prshnagalum kaykarym cheyan ulla sakthi Ninak ind nn ariyam Ennalum parayannn be strong in every situation. Vayas 21 ayakilum enik ippolum nee 17 18 ann. Orupaad miss cheyum ninte koode ulla aa time . Ann onnum enik sherik vella mnsilayernila. But now I can understand.", 
       audio: "/audio/june.mp3" },
