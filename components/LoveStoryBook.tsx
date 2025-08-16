@@ -3,8 +3,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import HTMLFlipBook from "react-pageflip";
 
 function LoveStoryBook() {
-  // Explicitly type refs
-  const bookRef = useRef<HTMLFlipBook | null>(null);
+  // Correct typing for refs
+  const bookRef = useRef<InstanceType<typeof HTMLFlipBook> | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const pokemonData = [
