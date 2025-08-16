@@ -156,8 +156,6 @@ const onFlip = (e: { data: number }) => {
               <div className="pokemon-container">
                 <img
                   src={`https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/${pokemon.id}.png`}
-                  // src='/set.png'
-                  alt={pokemon.name}
                 />
                 <div className="pokemon-info">
                   <p className="pokemon-description">{pokemon.description}</p>
