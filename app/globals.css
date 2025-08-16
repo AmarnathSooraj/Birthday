@@ -70,13 +70,13 @@ html {
   align-items: center;
   gap: 10px;
   width: 100%;
-  padding: 0 5px;
+  padding: 0 2px;
 }
 
 .pokemon-container img {
-  width: 70%;
-  max-height: 200px;
-  object-fit: contain;
+  width: 90%;
+  max-height: 800px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 

@@ -8,13 +8,26 @@ function LoveStoryBook() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const pokemonData = [
-    { id: "006", name: "Charizard", types: ["Fire", "Flying"], description: "Flies in search of strong opponents. Breathes extremely hot fire that melts anything, but never uses it on weaker foes.", audio: "/audio/charizard.mp3" },
-    { id: "025", name: "Pikachu", types: ["Electric"], description: "When Pikachu meet, they touch tails to exchange electricity as a greeting.", audio: "/audio/pikachu.mp3" },
-    { id: "125", name: "Electabuzz", types: ["Electric"], description: "Often kept at power plants to regulate electricity. Competes with others to attract lightning during storms.", audio: "/audio/electabuzz.mp3" },
-    { id: "185", name: "Sudowoodo", types: ["Rock"], description: "Despite looking like a tree, its body is more like rock. Hates water and hides when it rains.", audio: "/audio/sudowoodo.mp3" },
-    { id: "448", name: "Lucario", types: ["Fighting", "Steel"], description: "Can read thoughts and movements by sensing others' aura. No foe can hide from Lucario.", audio: "/audio/lucario.mp3" },
-    { id: "658", name: "Greninja", types: ["Water", "Dark"], description: "Creates throwing stars from compressed water that can slice through metal when thrown at high speed.", audio: "/audio/greninja.mp3" },
-    { id: "491", name: "Darkrai", types: ["Dark"], description: "A legendary Pokémon that appears on moonless nights, putting people to sleep and giving them nightmares.", audio: "/audio/darkrai.mp3" }
+    { id: "006", 
+      description: "Flies in search of strong opponents. Breathes extremely hot fire that melts anything, but never uses it on weaker foes.", audio: "/audio/aradhike.mp3" },
+    { id: "025",
+      description: "When Pikachu meet, they touch tails to exchange electricity as a greeting.", 
+      audio: "/audio/june.mp3" },
+    { id: "125", 
+      description: "Often kept at power plants to regulate electricity. Competes with others to attract lightning during storms.", 
+      audio: "/audio/meri.mp3" },
+    { id: "185",
+      description: "Despite looking like a tree, its body is more like rock. Hates water and hides when it rains.", 
+      audio: "/audio/chane.mp3" },
+    { id: "448",
+      description: "Can read thoughts and movements by sensing others' aura. No foe can hide from Lucario.Can read thoughts and movements by sensing others' aura. No foe can hide from Lucario.Can read thoughts and movements by sensing others' aura. No foe can hide from Lucario.Can read thoughts and movements by sensing others' aura. No foe can hide from Lucario.Can read thoughts and movements by sensing others' aura. No foe can hide from Lucario.Can read thoughts and movements by sensing others' aura. No foe can hide from Lucario.", 
+      audio: "/audio/kaise.mp3" },
+    { id: "658", 
+      description: "Creates throwing stars from compressed water that can slice through metal when thrown at high speed.", 
+      audio: "/audio/greninja.mp3" },
+    { id: "491",  
+      description: "A legendary Pokémon that appears on moonless nights, putting people to sleep and giving them nightmares.", 
+      audio: "/audio/darkrai.mp3" }
   ];
 
   const [currentAudio, setCurrentAudio] = useState(pokemonData[0].audio);
@@ -46,7 +59,7 @@ const onFlip = (e: { data: number }) => {
       <HTMLFlipBook
         ref={bookRef}
         width={370}
-        height={500}
+        height={600}
         maxShadowOpacity={0.5}
         drawShadow={true}
         showCover={true}
@@ -65,6 +78,7 @@ const onFlip = (e: { data: number }) => {
               <div className="pokemon-container">
                 <img
                   src={`https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/${pokemon.id}.png`}
+                  // src='/set.png'
                   alt={pokemon.name}
                 />
                 <div className="pokemon-info">
