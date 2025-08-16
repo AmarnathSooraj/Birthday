@@ -28,7 +28,7 @@ export default function Home() {
       return;
     }
 
-    const targetDate = new Date("2025-08-15T00:00:00").getTime();
+    const targetDate = new Date("2025-08-17T00:00:00").getTime();
 
     const updateTimeLeft = () => {
       const now = new Date().getTime();
@@ -107,7 +107,7 @@ export default function Home() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 200 }}
-            className="font-edu text-white text-4xl md:text-5xl font-light"
+            className="font-edu text-white text-3xl md:text-4xl font-light text-center"
           >
             Happy Birthday Ammuuuuu 🎉
           </motion.p>

@@ -19,7 +19,7 @@ function LoveStoryBook() {
              { id: "12", 
       description: "And it continues", audio: "/audio/punchiri.mp3" },
     { id: "11",
-      description: "I miss theseeeee days", 
+      description: "I miss thoseeeeeee days", 
       audio: "/audio/sona.mp3" },
     { id: "5",
       description: "Its all starts from here, jan 26 2022", 
