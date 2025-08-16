@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
-import HTMLFlipBook, { IFlipEvent } from "react-pageflip";
+import HTMLFlipBook from "react-pageflip";
 
 function LoveStoryBook() {
   // Explicitly type refs
@@ -31,12 +31,14 @@ function LoveStoryBook() {
   }, [currentAudio]);
 
   // Handle page flip
-  const onFlip = (e: IFlipEvent) => {
-    const pageIndex = e.data; // current page index
-    if (pageIndex > 0) {
-      setCurrentAudio(pokemonData[pageIndex - 1].audio); // -1 because cover page is index 0
-    }
-  };
+  // Handle page flip
+const onFlip = (e: { data: number }) => {
+  const pageIndex = e.data;
+  if (pageIndex > 0) {
+    setCurrentAudio(pokemonData[pageIndex - 1].audio);
+  }
+};
+
 
   return (
     <div className="relative">
