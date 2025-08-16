@@ -112,7 +112,7 @@ export default function Home() {
             Happy Birthday Ammuuuuu 🎉
           </motion.p>
 
-          <div className="bg-white/90 backdrop-blur-sm max-w-[450px] rounded-xl p-6 shadow-lg">
+          <div className="bg-white/90 backdrop-blur-sm max-w-[500px] rounded-xl p-8 shadow-lg">
             <p className="my-4 text-gray-800 text-lg leading-relaxed text-center">
               Happy Birthday, Kuttaaa ❤️. It's your 4th birthday together. You’ve been my joy, my strength, and my greatest blessing. Every moment with you is unforgettable, and I can’t wait to make more beautiful memories with you. I love you forever and always.
             </p>
