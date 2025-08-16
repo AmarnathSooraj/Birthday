@@ -30,14 +30,18 @@ function LoveStoryBook() {
 
   // Play audio whenever currentAudio changes
   useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.src = currentAudio;
-      audioRef.current.play().catch(() => {
+  if (audioRef.current) {
+    audioRef.current.pause();
+    audioRef.current.src = currentAudio;
+
+    audioRef.current.onloadedmetadata = () => {
+      audioRef.current!.currentTime = 30; // skip to 40s position
+      audioRef.current?.play().catch(() => {
         console.log("Autoplay blocked, user interaction required.");
       });
-    }
-  }, [currentAudio]);
+    };
+  }
+}, [currentAudio]);
 
   // Handle page flip
   // Handle page flip
