@@ -1,10 +1,11 @@
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
-import HTMLFlipBook from "react-pageflip";
+import HTMLFlipBook, { IFlipEvent } from "react-pageflip";
 
 function LoveStoryBook() {
-  const bookRef = useRef(null);
-  const audioRef = useRef(null);
+  // Explicitly type refs
+  const bookRef = useRef<HTMLFlipBook | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const pokemonData = [
     { id: "006", name: "Charizard", types: ["Fire", "Flying"], description: "Flies in search of strong opponents. Breathes extremely hot fire that melts anything, but never uses it on weaker foes.", audio: "/audio/charizard.mp3" },
@@ -30,7 +31,7 @@ function LoveStoryBook() {
   }, [currentAudio]);
 
   // Handle page flip
-  const onFlip = (e) => {
+  const onFlip = (e: IFlipEvent) => {
     const pageIndex = e.data; // current page index
     if (pageIndex > 0) {
       setCurrentAudio(pokemonData[pageIndex - 1].audio); // -1 because cover page is index 0
@@ -47,7 +48,7 @@ function LoveStoryBook() {
         maxShadowOpacity={0.5}
         drawShadow={true}
         showCover={true}
-        size='fixed'
+        size="fixed"
         onFlip={onFlip}
       >
         <div>
